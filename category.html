@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HANGMAN GAME CATEGORY</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #home-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Places the image behind other content */
+        }
+
+        .button-container {
+            position: absolute;
+            top: 65%; /* Adjust the top margin to make the buttons slightly lower */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Set fixed width and height for the buttons */
+        .button {
+            display: block;
+            margin: 10px 0; /* Adjust the top and bottom margin to separate buttons */
+            width: 200px; /* Set a fixed width for the buttons */
+            height: 40px; /* Set a fixed height for the buttons */
+            background-color: #ff8121;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #b74f00;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/Category.png" id="home-image">
+
+    <div class="button-container">
+        <a href="sejarah.html" style="text-decoration: none;"><button class="button">SEJARAH</button></a>
+        <a href="sains.html" style="text-decoration: none;"><button class="button">SAINS</button></a>
+        <a href="islam.html" style="text-decoration: none;"><button class="button">PENDIDIKAN ISLAM</button></a>
+        <a href="home.html" style="text-decoration: none;"><button class="button">BACK</button></a>
+    </div>
+</body>
+</html>

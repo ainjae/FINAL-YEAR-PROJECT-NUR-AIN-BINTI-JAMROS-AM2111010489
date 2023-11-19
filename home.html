@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #home-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Places the image behind other content */
+        }
+
+        .button-container {
+            position: absolute;
+            top: 79%; /* Adjust this value to lower or raise the button position */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .button {
+            display: block; /* Set the buttons to be block-level elements */
+            margin: 10px auto; /* Auto margin horizontally to center them */
+            width: 200px; /* Set a fixed width for the buttons */
+            height: 50px; /* Set a fixed height for the buttons */
+            background-color: #ec438c; /* Button background color */
+            color: white; /* Button text color */
+            border: none;
+            border-radius: 50px; /* Round shape */
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #b33f8e; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+    <img src="images/Home.png" id="home-image">
+
+    <div class="button-container">
+        <a href="category.html" style="text-decoration: none;"><button class="button">PLAY</button></a>
+        <a href="https://youtu.be/ZHHHpB8EPxY?feature=shared" target="_blank" style="text-decoration: none;">
+            <button class="button">HOW TO PLAY</button>
+        </a>
+          
+        
+    </div>
+</body>
+</html>
